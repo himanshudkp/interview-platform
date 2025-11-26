@@ -1,0 +1,21 @@
+{
+  "name": "@interview-platform/shared",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@interview-platform/types": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1"
+}
