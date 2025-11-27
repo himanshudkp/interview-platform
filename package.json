@@ -7,7 +7,6 @@
     "build": "pnpm -r build",
     "lint": "pnpm -r lint",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
-    "prepare": "husky",
     "type-check": "pnpm -r type-check"
   },
   "devDependencies": {
@@ -24,5 +23,13 @@
   "engines": {
     "node": ">=18.0.0",
     "pnpm": ">=8.0.0"
+  },
+    "pnpm": {
+    "overrides": {
+      "glob": "^13.0.0",
+      "lodash.get": "^4.4.2",
+      "lodash.isequal": "^4.5.0",
+      "leveldown": "^6.1.0"
+    }
   }
 }

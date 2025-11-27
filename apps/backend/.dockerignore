@@ -1,0 +1,14 @@
+node_modules
+dist
+.pnpm
+.pnpm-store
+coverage
+tests
+__tests__
+*.test.*
+*.spec.*
+.env
+.env.*
+.vscode
+.idea
+.DS_Store

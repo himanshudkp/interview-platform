@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "@clerk/express": "^1.7.53",
-    "@interview-platform/shared": "workspace:*",
-    "@interview-platform/types": "workspace:*",
     "@stream-io/node-sdk": "^0.7.21",
     "axios": "^1.13.2",
     "bullmq": "^5.65.0",
@@ -27,7 +25,9 @@
     "morgan": "^1.10.1",
     "stream-chat": "9.26.0",
     "winston": "^3.18.3",
-    "zod": "^4.1.13"
+    "zod": "^4.1.13",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
@@ -36,10 +36,20 @@
     "@types/node": "^24.10.1",
     "nodemon": "3.1.11",
     "tsx": "^4.20.6",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.12.1"
+  "packageManager": "pnpm@10.12.1",
+  "pnpm": {
+  "overrides": {
+    "glob": "^13.0.0",
+    "lodash.get": "^4.4.2",
+    "lodash.isequal": "^4.5.0",
+    "leveldown": "^6.1.0"
+    }
+  }
 }
